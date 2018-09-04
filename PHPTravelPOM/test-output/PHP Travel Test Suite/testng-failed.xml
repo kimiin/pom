@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PHP Travel Test Suite]">
+  <listeners>
+    <listener class-name="com.phpt.qa.report.ExtendReportListener"/>
+  </listeners>
+  <test thread-count="5" name="PHP Travel Test Cases(failed)">
+    <classes>
+      <class name="com.phpt.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyCorrectUserName"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyHotelLinkTest"/>
+        </methods>
+      </class> <!-- com.phpt.qa.testcases.HomePageTest -->
+      <class name="com.phpt.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.phpt.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- PHP Travel Test Cases(failed) -->
+</suite> <!-- Failed suite [PHP Travel Test Suite] -->
